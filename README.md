@@ -13,7 +13,7 @@ Designed for tattoo artists, studios, and creative professionals who want a prem
 
 ## 🖼️ Website Preview
 
-![Design](./preview-hero.png)
+![Design](./preview.png)
 
 ---
 
