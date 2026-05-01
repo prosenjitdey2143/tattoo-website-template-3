@@ -243,6 +243,7 @@ main {
 .split-section::before,
 .work::before,
 .services::before,
+.reviews::before,
 .contact::before {
   content: "";
   position: absolute;
@@ -689,6 +690,16 @@ h1 {
 .reviews {
   padding: 110px 0;
   position: relative;
+}
+
+.reviews::before {
+  top: 40px;
+  right: -5vw;
+  width: min(600px, 58vw);
+  height: min(600px, 58vw);
+  background-image: url("assets/gallery-neotraditional.png");
+  opacity: 0.22;
+  transform: rotate(-6deg);
 }
 
 .reviews-heading {
