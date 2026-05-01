@@ -320,7 +320,8 @@ p {
 h1 {
   margin-bottom: 24px;
   font-size: clamp(58px, 9.8vw, 122px);
-  line-height: 0.86;
+  line-height: 1.05;
+  padding-bottom: 6px;
   letter-spacing: 0;
   font-weight: 900;
 }
