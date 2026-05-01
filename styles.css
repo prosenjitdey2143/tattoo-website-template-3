@@ -74,10 +74,11 @@ textarea {
 .site-header {
   position: fixed;
   top: 18px;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 40;
   width: var(--page);
-  transform: translateX(-50%);
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -234,6 +235,7 @@ main {
 .contact {
   position: relative;
   isolation: isolate;
+  overflow: hidden;
 }
 
 .split-section::before,
@@ -870,6 +872,7 @@ h1 {
   .site-header {
     grid-template-columns: auto auto;
     justify-content: space-between;
+    gap: 0;
     overflow: hidden;
     transition:
       border-radius 0.45s cubic-bezier(0.19, 1, 0.22, 1),
@@ -883,6 +886,7 @@ h1 {
 
   .nav-links {
     grid-column: 1 / -1;
+    order: 3;
     display: grid;
     justify-self: stretch;
     gap: 0;
@@ -968,6 +972,7 @@ h1 {
 
   .menu-toggle {
     display: block;
+    order: 2;
   }
 
   .hero {
