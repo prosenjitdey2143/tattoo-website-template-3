@@ -625,6 +625,19 @@ h1 {
   padding-top: 70px;
 }
 
+.artist.alt {
+  grid-template-columns: 1fr 0.94fr;
+}
+
+.artist.alt .artist-image {
+  order: 2;
+}
+
+.artist.alt .artist-copy {
+  order: 1;
+  justify-self: start;
+}
+
 .artist::before {
   top: 28px;
   left: 44%;
@@ -1001,6 +1014,7 @@ h1 {
 
   .split-section,
   .artist,
+  .artist.alt,
   .contact-intro,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -1064,6 +1078,11 @@ h1 {
 
   .artist-copy {
     justify-self: start;
+  }
+
+  .artist.alt .artist-image,
+  .artist.alt .artist-copy {
+    order: initial;
   }
 
   .quick-actions {
